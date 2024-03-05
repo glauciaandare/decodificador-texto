@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor-principal:#0A3871;
+    --fundo-transparente:rgba(173,216,230,0.3);
+    --cor-texto: #ffffff;
+}
+
+*{
+    font-family: 'inter', Sans-Serif;
+    font-weight: 400;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url(/assets/img/espace.jpg);
+   background-size: cover;
+}
+
+main{
+    display: flex;
+    gap:40px;
+    margin-left: 10%;
+}
+
+.logo{
+    display: flex;
+    padding-top: 3%;
+    margin-left: 3%;
+}
+
+#section__container__input{
+    background-color:var(--fundo-transparente);
+    width: 80%;
+    margin-top: 1.25rem;
+    height: 340px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    
+}
+
+textarea.input{
+    
+    outline: none;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    padding: 10%;
+    resize: none;
+    background: transparent;
+    text-transform: lowercase;
+    
+}
+
+textarea.input::placeholder{
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+}
+
+.container__alert {
+    display: flex;
+    flex-direction: row;
+    margin-left: 11%;
+    align-items: center; 
+    gap:8px;
+    color:#c0c0c0;
+    font-size: 0.75rem;
+    opacity: 80%;
+}
+
+.container__button{
+    display: flex;
+    gap: 24px;
+    margin-top: 1.25rem;
+}
+
+button{
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width:328px;
+    Height: 67px;
+    font-size: 1rem;
+}
+
+.criptografar{
+    color: var(--cor-texto);
+    background-color: var(--cor-principal);
+}
+
+.descriptografar{
+    color: var(--cor-principal);
+    background-color:#D8DFE8;
+    border:1px solid var(--cor-principal); 
+}
+
+button:hover{
+    background-color: #4f76a7;
+    color: var(--cor-texto);
+}
+
+.resposta{
+    width: 25%;
+    height: 500px;
+    background-color: var(--fundo-transparente);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.container__mensagem{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    gap:10px;
+    justify-content: center;
+
+}
+
+.img__mensagem{
+    Width:170px;
+    Height:auto;
+    margin: 10%;
+}
+
+.Copiar{
+    color: var(--cor-principal);
+    background-color:#D8DFE8;
+    border:1px solid var(--cor-principal); 
+    height: 67px;
+    width: 14.75rem;
+}
+
+#nomensagem{
+  background-color: transparent;
+  width: 250px;
+  color:var(--cor-texto);
+}
+
+span{
+  background-color: transparent;
+  font-size: 13px;
+  color:#c0c0c0;
+}
+
+
+.inputext{
+    outline: none;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    padding: 10%;
+    margin-left: 10%;
+    resize: none;
+    background: transparent;
+    height: 15em;
+}
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    color: var(--cor-texto);
+}
+
+
+
+@media (max-width: 800px){
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   .img__mensagem{
+        display: none;
+    }
+
+    .resposta{
+        width: 100%;
+        height: 10%;
+        justify-content: center;
+}
+}
+
+@media (max-width: 400px){
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   .img__mensagem{
+        display: none;
+    }
+
+
+    .resposta{
+        width: 100%;
+        height: 10%;
+        justify-content: center;
+}
+
+    .container__button{
+    flex-direction: column;
+}}
